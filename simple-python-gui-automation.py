@@ -18,5 +18,5 @@ def test_google_search(driver):
     search_box = driver.find_element(By.NAME, "q")
     search_box.send_keys("Selenium WebDriver" + Keys.RETURN)
     print("driver.title == " + driver.title)
-    time.sleep(10)
-    # assert "Selenium WebDriver" in driver.title
+    #time.sleep(10)
+    assert "Selenium+WebDriver" in driver.title
